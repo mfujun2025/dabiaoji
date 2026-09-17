@@ -86,6 +86,8 @@ MUST_HAVE = [
     "sitemap.xml",
     "static/style.css",
     "static/favicon.svg",
+    "static/images/product-fiber-30w-photo.webp",
+    "static/images/product-fiber-30w-photo.jpg",
     "guide/index.html",
     "types/index.html",
     "applications/index.html",

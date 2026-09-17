@@ -2,6 +2,7 @@
 public/
 
 # 本地临时目录
+_cand/
 _preview/
 _gen/
 _work/

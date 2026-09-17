@@ -761,7 +761,8 @@ def build_product_page(url="/", extra_active=None):
             },
         ],
     }
-    return render_page(url, title, desc, keywords, content, ld, extra_active=extra_active)
+    return render_page(url, title, desc, keywords, content, ld, extra_active=extra_active,
+                       og_image=BASE + "/static/images/product-fiber-30w-photo.jpg")
 
 
 def build_products():
@@ -819,7 +820,8 @@ def build_products():
             },
         ],
     }
-    return render_page("/products/", title, desc, keywords, content, ld)
+    return render_page("/products/", title, desc, keywords, content, ld,
+                       og_image=BASE + "/static/images/product-fiber-30w-photo.jpg")
 
 
 def build_product_card():
