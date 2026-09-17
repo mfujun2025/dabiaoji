@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 372" role="img" aria-labelledby="mxT mxD" style="width:100%;height:auto;display:block">
+  <title id="mxT">激光打标机材料适配矩阵</title>
+  <desc id="mxD">光纤 1064nm、绿光 532nm、紫外 355nm、CO₂ 10.6μm 四类机型对金属、高反金属、塑料玻璃 PCB、木材皮革亚克力四类材料的适配程度</desc>
+
+  <defs>
+    <style>
+      .h { font-family: "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 表头 -->
+  <rect x="20" y="18" width="1060" height="56" rx="10" fill="#16406f"/>
+  <text class="h" x="40" y="52" font-size="15" font-weight="600" fill="#ffffff">机型 / 波长</text>
+  <text class="h" x="310" y="52" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">金属 · 钢铝铜</text>
+  <text class="h" x="530" y="52" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">高反金属 · 金银</text>
+  <text class="h" x="750" y="52" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">塑料 · 玻璃 · PCB</text>
+  <text class="h" x="970" y="52" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">木材 · 皮革 · 亚克力</text>
+
+  <!-- 行卡片 -->
+  <g>
+    <rect x="20" y="82" width="1060" height="54" rx="10" fill="#ffffff" stroke="#e6ebf1"/>
+    <rect x="20" y="144" width="1060" height="54" rx="10" fill="#ffffff" stroke="#e6ebf1"/>
+    <rect x="20" y="206" width="1060" height="54" rx="10" fill="#ffffff" stroke="#e6ebf1"/>
+    <rect x="20" y="268" width="1060" height="54" rx="10" fill="#ffffff" stroke="#e6ebf1"/>
+  </g>
+
+  <!-- 标签列竖分隔 -->
+  <line x1="200" y1="82" x2="200" y2="322" stroke="#eef2f7"/>
+
+  <!-- 行 1：光纤 -->
+  <text class="h" x="40" y="114" font-size="15" font-weight="600" fill="#18222f">光纤</text>
+  <text class="h" x="106" y="114" font-size="13" fill="#64707f">1064nm</text>
+  <g>
+    <circle cx="276" cy="109" r="11" fill="#e6f4ec"/><text class="h" x="276" y="113" font-size="12" fill="#1f7a4d" text-anchor="middle">✓</text>
+    <text class="h" x="294" y="114" font-size="14" fill="#1f7a4d">推荐</text>
+  </g>
+  <g>
+    <circle cx="496" cy="109" r="11" fill="#fdf3e6"/><text class="h" x="496" y="113" font-size="12" fill="#a86416" text-anchor="middle">△</text>
+    <text class="h" x="514" y="114" font-size="14" fill="#8a5210">需打样</text>
+  </g>
+  <g>
+    <circle cx="716" cy="109" r="11" fill="#fdf3e6"/><text class="h" x="716" y="113" font-size="12" fill="#a86416" text-anchor="middle">△</text>
+    <text class="h" x="734" y="114" font-size="14" fill="#8a5210">需打样</text>
+  </g>
+  <g>
+    <circle cx="936" cy="109" r="11" fill="#f2f4f7"/><text class="h" x="936" y="113" font-size="12" fill="#9aa5b1" text-anchor="middle">✕</text>
+    <text class="h" x="954" y="114" font-size="14" fill="#7b8794">不适用</text>
+  </g>
+
+  <!-- 行 2：绿光 -->
+  <text class="h" x="40" y="176" font-size="15" font-weight="600" fill="#18222f">绿光</text>
+  <text class="h" x="106" y="176" font-size="13" fill="#64707f">532nm</text>
+  <g>
+    <circle cx="276" cy="171" r="11" fill="#eaf2fb"/><text class="h" x="276" y="175" font-size="12" fill="#2f7fd1" text-anchor="middle">○</text>
+    <text class="h" x="294" y="176" font-size="14" fill="#1d5b96">可用</text>
+  </g>
+  <g>
+    <circle cx="496" cy="171" r="11" fill="#e6f4ec"/><text class="h" x="496" y="175" font-size="12" fill="#1f7a4d" text-anchor="middle">✓</text>
+    <text class="h" x="514" y="176" font-size="14" fill="#1f7a4d">推荐</text>
+  </g>
+  <g>
+    <circle cx="716" cy="171" r="11" fill="#fdf3e6"/><text class="h" x="716" y="175" font-size="12" fill="#a86416" text-anchor="middle">△</text>
+    <text class="h" x="734" y="176" font-size="14" fill="#8a5210">需打样</text>
+  </g>
+  <g>
+    <circle cx="936" cy="171" r="11" fill="#f2f4f7"/><text class="h" x="936" y="175" font-size="12" fill="#9aa5b1" text-anchor="middle">✕</text>
+    <text class="h" x="954" y="176" font-size="14" fill="#7b8794">不适用</text>
+  </g>
+
+  <!-- 行 3：紫外 -->
+  <text class="h" x="40" y="238" font-size="15" font-weight="600" fill="#18222f">紫外</text>
+  <text class="h" x="106" y="238" font-size="13" fill="#64707f">355nm</text>
+  <g>
+    <circle cx="276" cy="233" r="11" fill="#eaf2fb"/><text class="h" x="276" y="237" font-size="12" fill="#2f7fd1" text-anchor="middle">○</text>
+    <text class="h" x="294" y="238" font-size="14" fill="#1d5b96">可用</text>
+  </g>
+  <g>
+    <circle cx="496" cy="233" r="11" fill="#fdf3e6"/><text class="h" x="496" y="237" font-size="12" fill="#a86416" text-anchor="middle">△</text>
+    <text class="h" x="514" y="238" font-size="14" fill="#8a5210">需打样</text>
+  </g>
+  <g>
+    <circle cx="716" cy="233" r="11" fill="#e6f4ec"/><text class="h" x="716" y="237" font-size="12" fill="#1f7a4d" text-anchor="middle">✓</text>
+    <text class="h" x="734" y="238" font-size="14" fill="#1f7a4d">推荐</text>
+  </g>
+  <g>
+    <circle cx="936" cy="233" r="11" fill="#fdf3e6"/><text class="h" x="936" y="237" font-size="12" fill="#a86416" text-anchor="middle">△</text>
+    <text class="h" x="954" y="238" font-size="14" fill="#8a5210">需打样</text>
+  </g>
+
+  <!-- 行 4：CO2 -->
+  <text class="h" x="40" y="300" font-size="15" font-weight="600" fill="#18222f">CO₂</text>
+  <text class="h" x="106" y="300" font-size="13" fill="#64707f">10.6μm</text>
+  <g>
+    <circle cx="276" cy="295" r="11" fill="#f2f4f7"/><text class="h" x="276" y="299" font-size="12" fill="#9aa5b1" text-anchor="middle">✕</text>
+    <text class="h" x="294" y="300" font-size="14" fill="#7b8794">不适用</text>
+  </g>
+  <g>
+    <circle cx="496" cy="295" r="11" fill="#f2f4f7"/><text class="h" x="496" y="299" font-size="12" fill="#9aa5b1" text-anchor="middle">✕</text>
+    <text class="h" x="514" y="300" font-size="14" fill="#7b8794">不适用</text>
+  </g>
+  <g>
+    <circle cx="716" cy="295" r="11" fill="#fdf3e6"/><text class="h" x="716" y="299" font-size="12" fill="#a86416" text-anchor="middle">△</text>
+    <text class="h" x="734" y="300" font-size="14" fill="#8a5210">仅玻璃表面</text>
+  </g>
+  <g>
+    <circle cx="936" cy="295" r="11" fill="#e6f4ec"/><text class="h" x="936" y="299" font-size="12" fill="#1f7a4d" text-anchor="middle">✓</text>
+    <text class="h" x="954" y="300" font-size="14" fill="#1f7a4d">推荐</text>
+  </g>
+
+  <!-- 图例 -->
+  <g transform="translate(20,346)">
+    <circle cx="8" cy="-4" r="9" fill="#e6f4ec"/><text class="h" x="8" y="0" font-size="11" fill="#1f7a4d" text-anchor="middle">✓</text>
+    <text class="h" x="24" y="0" font-size="13" fill="#64707f">推荐机型</text>
+
+    <circle cx="122" cy="-4" r="9" fill="#fdf3e6"/><text class="h" x="122" y="0" font-size="11" fill="#a86416" text-anchor="middle">△</text>
+    <text class="h" x="138" y="0" font-size="13" fill="#64707f">可用但必须寄样确认</text>
+
+    <circle cx="306" cy="-4" r="9" fill="#eaf2fb"/><text class="h" x="306" y="0" font-size="11" fill="#2f7fd1" text-anchor="middle">○</text>
+    <text class="h" x="322" y="0" font-size="13" fill="#64707f">可加工，非最优解</text>
+
+    <circle cx="474" cy="-4" r="9" fill="#f2f4f7"/><text class="h" x="474" y="0" font-size="11" fill="#9aa5b1" text-anchor="middle">✕</text>
+    <text class="h" x="490" y="0" font-size="13" fill="#64707f">不适用</text>
+  </g>
+</svg>

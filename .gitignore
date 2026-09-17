@@ -1,0 +1,16 @@
+# 构建产物（由 build.py 生成，发布在 gh-pages 分支，不进源码分支）
+public/
+
+# 本地临时目录
+_preview/
+_gen/
+_work/
+_tmp_preview/
+_payload*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/

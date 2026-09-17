@@ -1,0 +1,20 @@
+{
+  "name": "激光打标机.cn",
+  "domain_cn": "激光打标机.cn",
+  "domain_punycode": "xn--54q482buudoxam6z.cn",
+  "base_url": "https://xn--54q482buudoxam6z.cn",
+  "tagline": "激光打标机选型知识与设备采购参考",
+  "description": "围绕激光打标机的原理、类型、参数、应用场景与选型方法整理的行业知识站。域名 激光打标机.cn 正在出售。",
+  "email": "mfujun@agent.qq.com",
+  "repo": "",
+  "author": "激光打标机.cn",
+  "nav": [
+    { "url": "/products/", "label": "产品中心" },
+    { "url": "/guide/", "label": "完全指南" },
+    { "url": "/types/", "label": "机型对比" },
+    { "url": "/applications/", "label": "应用场景" },
+    { "url": "/faq/", "label": "常见问题" },
+    { "url": "/domain/", "label": "域名出售" },
+    { "url": "/contact/", "label": "采购咨询" }
+  ]
+}
