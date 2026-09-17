@@ -88,6 +88,8 @@ MUST_HAVE = [
     "static/favicon.svg",
     "static/images/product-fiber-30w-photo.webp",
     "static/images/product-fiber-30w-photo.jpg",
+    # 搜索引擎归属验证文件：必须落在产物根，才能从 https://域名/文件名 访问
+    "BingSiteAuth.xml",
     "guide/index.html",
     "types/index.html",
     "applications/index.html",
