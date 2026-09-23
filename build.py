@@ -27,6 +27,8 @@ PUBLIC = os.path.join(ROOT, "public")
 
 TODAY = "2026-09-17"
 YEAR = "2026"
+# 选购指南的实际成文日期，比站点首版日期新，用于 sitemap lastmod 与 Article dateModified
+GUIDE_DATE = "2026-09-23"
 
 with open(os.path.join(ROOT, "site.json"), encoding="utf-8") as f:
     SITE = json.load(f)
@@ -208,6 +210,18 @@ DOC_PAGES = [
         ],
     ),
     dict(
+        url="/buying-guide/",
+        file="buying-guide.md",
+        crumb="激光打标机选购指南",
+        faq="self",
+        related=[
+            ("激光打标机完全指南", "/guide/"),
+            ("四种机型对比", "/types/"),
+            ("30W 光纤机型资料", "/"),
+            ("采购常见问题", "/faq/"),
+        ],
+    ),
+    dict(
         url="/types/",
         file="types.md",
         crumb="四种机型对比",
@@ -316,23 +330,31 @@ def build_doc_page(p):
     }
 
     if p.get("faq"):
-        _, fbody = parse_doc(os.path.join(CONTENT, "faq.md"))
-        ld["@graph"].append(
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": it["q"],
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": plain_text(it["md"]),
-                        },
-                    }
-                    for it in extract_faqs(fbody)
-                ],
-            }
-        )
+        # FAQ 有两种写法：① 引用独立 faq.md（首页 /faq/）② 本页正文自带「## 常见问题」
+        if p.get("faq") == "self":
+            _, sbody = parse_doc(os.path.join(CONTENT, p["file"]))
+            idx = sbody.find("\n## 常见问题")
+            faq_src = sbody[idx + 1:] if idx != -1 else ""
+        else:
+            _, faq_src = parse_doc(os.path.join(CONTENT, "faq.md"))
+        faqs = extract_faqs(faq_src.split("\n", 1)[1] if faq_src.startswith("## ") else faq_src)
+        if faqs:
+            ld["@graph"].append(
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": it["q"],
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": plain_text(it["md"]),
+                            },
+                        }
+                        for it in faqs
+                    ],
+                }
+            )
 
     return render_page(
         p["url"],
@@ -1097,6 +1119,7 @@ def main():
         dict(url="/", label="30W 光纤激光打标机：参数、配置与选型（首页）", group="main", date=TODAY, priority="1.0", changefreq="weekly"),
         dict(url="/products/", label="产品中心：机型与配置资料", group="main", date=TODAY, priority="0.9", changefreq="monthly"),
         dict(url="/guide/", label="激光打标机完全指南：原理、类型、参数与选型", group="knowledge", date=TODAY, priority="0.9", changefreq="monthly"),
+        dict(url="/buying-guide/", label="激光打标机选购指南：原理·机型·价格·维护", group="knowledge", date=GUIDE_DATE, priority="0.9", changefreq="monthly"),
         dict(url="/types/", label="四种机型对比：光纤 / 紫外 / CO₂ / 绿光", group="knowledge", date=TODAY, priority="0.8", changefreq="monthly"),
         dict(url="/applications/", label="应用场景与行业：激光打标用在哪道工序", group="knowledge", date=TODAY, priority="0.8", changefreq="monthly"),
         dict(url="/faq/", label="采购常见问题：打样、验收、安全等级与维护成本", group="knowledge", date=TODAY, priority="0.7", changefreq="monthly"),

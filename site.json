@@ -11,6 +11,7 @@
   "nav": [
     { "url": "/products/", "label": "产品中心" },
     { "url": "/guide/", "label": "完全指南" },
+    { "url": "/buying-guide/", "label": "选购指南" },
     { "url": "/types/", "label": "机型对比" },
     { "url": "/applications/", "label": "应用场景" },
     { "url": "/faq/", "label": "常见问题" },

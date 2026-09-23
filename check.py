@@ -91,6 +91,7 @@ MUST_HAVE = [
     # 搜索引擎归属验证文件：必须落在产物根，才能从 https://域名/文件名 访问
     "BingSiteAuth.xml",
     "guide/index.html",
+    "buying-guide/index.html",
     "types/index.html",
     "applications/index.html",
     "faq/index.html",
@@ -199,6 +200,25 @@ if "GB/T 7247.1-2024" not in guide:
 for kw in ["1064", "355", "10.6", "532"]:
     if kw not in guide:
         errors.append("长文缺少波长数据：%s" % kw)
+
+# 选购指南（/buying-guide/）：独立文章页
+bg = read("buying-guide/index.html")
+for kw in ["激光打标机选购指南", "热加工", "冷加工", "采购避坑清单",
+           "GB/T 7247.1-2024", "1064", "355", "10.6", EMAIL]:
+    if kw not in bg:
+        errors.append("选购指南页缺少关键内容：%s" % kw)
+if 'href="/types/"' not in bg:
+    errors.append("选购指南页缺少指向机型对比的内链")
+if '"@type": "FAQPage"' not in bg:
+    errors.append("选购指南页缺少 FAQPage 结构化数据")
+if '"@type": "Article"' not in bg:
+    errors.append("选购指南页缺少 Article 结构化数据")
+if bg.count('"@type": "Question"') < 5:
+    errors.append("选购指南页 FAQPage 题目数不足 5 条")
+# 草稿里的编辑备注不得进入线上页面
+for leaked in ["Meta 标题备选", "结构化数据（部署时粘贴", "写进 <head>"]:
+    if leaked in bg:
+        errors.append("选购指南页残留草稿编辑备注：%s" % leaked)
 
 # 全站都应能看到出售标注
 for f in html_files:
