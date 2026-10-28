@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xn--54q482buudoxam6z.cn/sitemap.xml

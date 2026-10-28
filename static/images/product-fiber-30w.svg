@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 660" role="img" aria-labelledby="pmT pmD" font-family="system-ui, 'Microsoft YaHei', 'PingFang SC', sans-serif">
+<title id="pmT">光纤激光打标机整机结构与主要部件示意</title>
+<desc id="pmD">台式光纤激光打标机正视图。柜体内置 30W 脉冲光纤激光器与控制系统，左侧立柱支撑悬臂，臂端为高速振镜扫描头与 F-θ 场镜，正下方为工作台面，柜体正面配工业触控屏、操作按钮与急停开关。</desc>
+<defs>
+  <linearGradient id="gCab" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3d6489"/>
+    <stop offset="0.5" stop-color="#254568"/>
+    <stop offset="1" stop-color="#17304e"/>
+  </linearGradient>
+  <linearGradient id="gTop" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8296ad"/>
+    <stop offset="0.45" stop-color="#ccd8e5"/>
+    <stop offset="1" stop-color="#7a8ea5"/>
+  </linearGradient>
+  <linearGradient id="gArm" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ccd8e5"/>
+    <stop offset="0.4" stop-color="#9aacbf"/>
+    <stop offset="1" stop-color="#63768c"/>
+  </linearGradient>
+  <linearGradient id="gCol" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#6d8197"/>
+    <stop offset="0.32" stop-color="#bccad9"/>
+    <stop offset="1" stop-color="#5f7288"/>
+  </linearGradient>
+  <linearGradient id="gHead" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#4c5b70"/>
+    <stop offset="1" stop-color="#212b3a"/>
+  </linearGradient>
+  <linearGradient id="gScreen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1e5183"/>
+    <stop offset="1" stop-color="#0d2946"/>
+  </linearGradient>
+  <linearGradient id="gWork" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#a9b9ca"/>
+    <stop offset="1" stop-color="#74879c"/>
+  </linearGradient>
+  <radialGradient id="gGlow" cx="0.5" cy="0.05" r="0.95">
+    <stop offset="0" stop-color="#e34a30" stop-opacity="0.6"/>
+    <stop offset="1" stop-color="#e34a30" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="fSoft" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="7"/>
+  </filter>
+</defs>
+
+<!-- 地面阴影 -->
+<ellipse cx="432" cy="626" rx="246" ry="15" fill="#0f2440" opacity="0.10"/>
+
+<!-- 立柱（左） -->
+<rect x="208" y="114" width="54" height="252" rx="7" fill="url(#gCol)"/>
+<rect x="196" y="348" width="78" height="20" rx="5" fill="#5f7288"/>
+
+<!-- 悬臂横梁 -->
+<rect x="206" y="114" width="316" height="46" rx="9" fill="url(#gArm)"/>
+<rect x="216" y="122" width="296" height="6" rx="3" fill="#e6eef7" opacity="0.45"/>
+
+<!-- 振镜扫描头：上段方体 -->
+<rect x="450" y="160" width="112" height="62" rx="7" fill="url(#gHead)"/>
+<rect x="458" y="168" width="96" height="5" rx="2.5" fill="#8ea3bb" opacity="0.35"/>
+<!-- 振镜扫描头：下段喇叭口 -->
+<path d="M456 222 L556 222 L534 272 L478 272 Z" fill="url(#gHead)"/>
+<!-- F-θ 场镜 -->
+<rect x="470" y="272" width="72" height="15" rx="3" fill="#c8d4e2"/>
+<rect x="474" y="287" width="64" height="9" rx="2" fill="#8ea1b6"/>
+<circle cx="506" cy="300" r="6" fill="#22303f"/>
+
+<!-- 激光束（锥形 + 中心虚线） -->
+<path d="M498 302 L514 302 L540 336 L472 336 Z" fill="url(#gGlow)"/>
+<line x1="506" y1="302" x2="506" y2="338" stroke="#e34a30" stroke-width="3" stroke-dasharray="7 5"/>
+<ellipse cx="506" cy="337" rx="20" ry="4.5" fill="#d93b26" opacity="0.45" filter="url(#fSoft)"/>
+
+<!-- 工件（金属板，正在被标记） -->
+<rect x="424" y="336" width="176" height="24" rx="4" fill="url(#gWork)" stroke="#6b7d92" stroke-width="1.2"/>
+<rect x="442" y="343" width="13" height="11" rx="2" fill="#e2eaf3" opacity="0.9"/>
+<rect x="461" y="343" width="13" height="11" rx="2" fill="#e2eaf3" opacity="0.9"/>
+<rect x="480" y="343" width="13" height="11" rx="2" fill="#e2eaf3" opacity="0.6"/>
+<rect x="499" y="343" width="34" height="11" rx="2" fill="#e2eaf3" opacity="0.8"/>
+<rect x="541" y="343" width="34" height="11" rx="2" fill="#e2eaf3" opacity="0.5"/>
+
+<!-- 工作台面 -->
+<rect x="242" y="358" width="378" height="24" rx="6" fill="url(#gTop)"/>
+
+<!-- 柜体 -->
+<rect x="250" y="380" width="362" height="222" rx="11" fill="url(#gCab)"/>
+<rect x="250" y="380" width="362" height="8" rx="4" fill="#4d779f" opacity="0.7"/>
+
+<!-- 柜体正面：工业触控屏 -->
+<rect x="286" y="402" width="290" height="124" rx="9" fill="#0f2135"/>
+<rect x="295" y="411" width="272" height="106" rx="5" fill="url(#gScreen)"/>
+<rect x="305" y="421" width="86" height="8" rx="4" fill="#5fb2ff" opacity="0.9"/>
+<rect x="305" y="437" width="52" height="6" rx="3" fill="#5fb2ff" opacity="0.5"/>
+<polyline points="305,498 337,480 369,490 401,462 433,472 465,450 497,460 529,442 557,452" fill="none" stroke="#5fb2ff" stroke-width="2.6" opacity="0.92"/>
+<rect x="452" y="421" width="105" height="30" rx="4" fill="#0a1f36"/>
+<rect x="461" y="430" width="60" height="5" rx="2.5" fill="#5fb2ff" opacity="0.7"/>
+<rect x="461" y="440" width="84" height="5" rx="2.5" fill="#5fb2ff" opacity="0.4"/>
+
+<!-- 柜体正面：操作按钮与急停 -->
+<circle cx="304" cy="550" r="10" fill="#27ae60"/>
+<circle cx="336" cy="550" r="10" fill="#e0a02a"/>
+<circle cx="368" cy="550" r="10" fill="#7d8ea3"/>
+<circle cx="552" cy="548" r="19" fill="#8a2418"/>
+<circle cx="552" cy="548" r="15" fill="#d93b26"/>
+<circle cx="552" cy="548" r="7" fill="#f6ded9"/>
+
+<!-- 柜体下部散热格栅 -->
+<g stroke="#0f2743" stroke-width="4" stroke-linecap="round" opacity="0.55">
+  <line x1="404" y1="566" x2="520" y2="566"/>
+  <line x1="404" y1="578" x2="520" y2="578"/>
+  <line x1="404" y1="590" x2="520" y2="590"/>
+</g>
+
+<!-- 脚轮 -->
+<g fill="#1a2b3d">
+  <circle cx="292" cy="607" r="13"/>
+  <circle cx="400" cy="607" r="13"/>
+  <circle cx="510" cy="607" r="13"/>
+  <circle cx="606" cy="607" r="13"/>
+</g>
+<g fill="#3d5570">
+  <circle cx="292" cy="604" r="4"/>
+  <circle cx="400" cy="604" r="4"/>
+  <circle cx="510" cy="604" r="4"/>
+  <circle cx="606" cy="604" r="4"/>
+</g>
+
+<!-- ============ 部件标注 ============ -->
+<g stroke="#16406f" stroke-width="1.4" stroke-dasharray="5 4" fill="none">
+  <polyline points="268,398 226,380 192,380"/>
+  <polyline points="288,466 226,466 192,466"/>
+  <polyline points="566,178 690,178"/>
+  <polyline points="560,278 634,278 690,278"/>
+  <polyline points="632,354 690,354"/>
+</g>
+
+<g font-size="15" font-weight="700">
+  <circle cx="268" cy="398" r="12" fill="#16406f"/>
+  <text x="268" y="403" text-anchor="middle" fill="#ffffff" font-size="13">1</text>
+  <circle cx="288" cy="466" r="12" fill="#16406f"/>
+  <text x="288" y="471" text-anchor="middle" fill="#ffffff" font-size="13">2</text>
+  <circle cx="566" cy="178" r="12" fill="#16406f"/>
+  <text x="566" y="183" text-anchor="middle" fill="#ffffff" font-size="13">3</text>
+  <circle cx="560" cy="278" r="12" fill="#16406f"/>
+  <text x="560" y="283" text-anchor="middle" fill="#ffffff" font-size="13">4</text>
+  <circle cx="622" cy="362" r="12" fill="#16406f"/>
+  <text x="622" y="367" text-anchor="middle" fill="#ffffff" font-size="13">5</text>
+</g>
+
+<g>
+  <rect x="16" y="364" width="176" height="32" rx="16" fill="#eef4fb" stroke="#c3d4e6"/>
+  <text x="30" y="385" font-size="14" fill="#1b3252">30W 光纤激光器</text>
+
+  <rect x="16" y="450" width="176" height="32" rx="16" fill="#eef4fb" stroke="#c3d4e6"/>
+  <text x="30" y="471" font-size="14" fill="#1b3252">工业触控屏与控制系统</text>
+
+  <rect x="694" y="162" width="150" height="32" rx="16" fill="#eef4fb" stroke="#c3d4e6"/>
+  <text x="708" y="183" font-size="14" fill="#1b3252">高速振镜扫描头</text>
+
+  <rect x="694" y="262" width="150" height="32" rx="16" fill="#eef4fb" stroke="#c3d4e6"/>
+  <text x="708" y="283" font-size="14" fill="#1b3252">F-θ 场镜</text>
+
+  <rect x="694" y="332" width="150" height="32" rx="16" fill="#eef4fb" stroke="#c3d4e6"/>
+  <text x="708" y="353" font-size="14" fill="#1b3252">工作台面</text>
+</g>
+
+<!-- 底部说明 -->
+<text x="430" y="652" text-anchor="middle" font-size="13" fill="#7b8794">整机结构示意 · 非实物照片，实际外观与部件布局以厂商技术协议为准</text>
+</svg>
