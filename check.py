@@ -92,6 +92,7 @@ MUST_HAVE = [
     "BingSiteAuth.xml",
     "guide/index.html",
     "buying-guide/index.html",
+    "price/index.html",
     "types/index.html",
     "applications/index.html",
     "faq/index.html",

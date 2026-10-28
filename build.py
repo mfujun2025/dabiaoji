@@ -222,6 +222,18 @@ DOC_PAGES = [
         ],
     ),
     dict(
+        url="/price/",
+        file="price.md",
+        crumb="激光打标机多少钱一台",
+        faq="self",
+        related=[
+            ("激光打标机完全指南", "/guide/"),
+            ("激光打标机选购指南", "/buying-guide/"),
+            ("四种机型对比", "/types/"),
+            ("采购常见问题", "/faq/"),
+        ],
+    ),
+    dict(
         url="/types/",
         file="types.md",
         crumb="四种机型对比",
@@ -1120,6 +1132,7 @@ def main():
         dict(url="/products/", label="产品中心：机型与配置资料", group="main", date=TODAY, priority="0.9", changefreq="monthly"),
         dict(url="/guide/", label="激光打标机完全指南：原理、类型、参数与选型", group="knowledge", date=TODAY, priority="0.9", changefreq="monthly"),
         dict(url="/buying-guide/", label="激光打标机选购指南：原理·机型·价格·维护", group="knowledge", date=GUIDE_DATE, priority="0.9", changefreq="monthly"),
+        dict(url="/price/", label="激光打标机多少钱一台：2025–2026价格分层与采购预算指南", group="knowledge", date="2026-10-28", priority="0.9", changefreq="monthly"),
         dict(url="/types/", label="四种机型对比：光纤 / 紫外 / CO₂ / 绿光", group="knowledge", date=TODAY, priority="0.8", changefreq="monthly"),
         dict(url="/applications/", label="应用场景与行业：激光打标用在哪道工序", group="knowledge", date=TODAY, priority="0.8", changefreq="monthly"),
         dict(url="/faq/", label="采购常见问题：打样、验收、安全等级与维护成本", group="knowledge", date=TODAY, priority="0.7", changefreq="monthly"),
